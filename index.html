@@ -12,32 +12,39 @@
     <!-- page heading -->
 
     <header>
-        <h1 class="display-6 text-center py-2">Money Management </h1>
+        <h1 class="display-6 text-center py-3">Money Management </h1>
     </header>
 
     <!-- main -->
     <main>
         <div class="container">
-            <div class="row ">
-                <div class="col-lg-6">
-                    <img src="src/image.jpg" alt="">
+            <div class="row flex-nowrap">
+                <div class="col-6">
+                    <img class="img-fluid" src="src/image.jpg" alt="">
                 </div>
-                <div class="col-lg-5 ms-5 ps-5 bg-light p-5">
+                <div class="col-6 ms-5 bg-light pt-4 px-5 ">
                     <!-- income -->
                      <h5>Income</h5>
-                     <label class="inc-exp-label" for="">income</label>
-                     <input class='inc-exp-input' id="income-input" type="text">
-
+                     <div class='input-section'>
+                     <label class="label" for="">Income:</label>
+                     <input id="income-input" class='input'  type="text">
+                    </div>
                      <!-- Expense -->
                      <h5>Expense</h5>
-                     <label class="inc-exp-label" for="">food</label>
-                     <input class='inc-exp-input' id="food-input" type="text">
-                     <label class="inc-exp-label" for="">rent</label>
-                     <input class='inc-exp-input' id="rent-input" type="text">
-                     <label class="inc-exp-label" for="">cloth</label>
-                     <input class='inc-exp-input' id="cloth-input" type="text">
-                     <button class="btn btn-primary">calculate</button>
-
+                     <div class='input-section'>
+                     <label class="label" for="">Food:</label>
+                     <input id="food-input" class='input'  type="text">
+                     </div>
+                     <div class='input-section'>
+                     <label class="label" for="">Rent:</label>
+                     <input id="rent-input" class='input' type="text">
+                    </div>
+                    <div class='input-section'>
+                     <label class="label" for="">Cloth:</label>
+                     <input id="cloth-input" class='input'  type="text">
+                     
+                    </div>
+                    <button class="btn btn-primary">calculate</button>
                      <!-- total  -->
                      <h5>Total Expense</h5>
                      <h5>balance</h5>
@@ -55,7 +62,7 @@
     </main>
 
 
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="script/script.js"></script>    
 </body>
 </html>

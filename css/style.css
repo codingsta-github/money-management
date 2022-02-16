@@ -14,13 +14,22 @@ body{
     padding: 0;    
 }
 h5{
-    text-align: center;
-    padding: .4em;
-}
-.inc-exp-input{
-    background-color: #DCDCDC;
-    height: 45px;
-    width: 230px;
+    text-align: center;     
 }
 
+.input-section{
+    position: relative;
+    margin: 15px;
+}
+.label{
+    position: absolute;
+    right: 275px;
+}
+.input{
+    background-color: #DCDCDC;
+    border: 0;
+    border-radius: 3px;
+    position: relative;
+    left: 100px;
+}
 
