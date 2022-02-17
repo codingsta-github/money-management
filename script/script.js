@@ -1,20 +1,42 @@
+function inputValue(src) {
+    var src=parseFloat(document.getElementById(src+'-input').value);
+    
+    return src;
 
-    document.getElementById('calculate-btn').addEventListener('click',function arr(){
-        const income=parseFloat(document.getElementById('income-input').value);
-        const food=parseFloat(document.getElementById('food-input').value);
-        const rent=parseFloat(document.getElementById('rent-input').value);
-        const cloth=parseFloat(document.getElementById('cloth-input').value);
+}
+    
+
+    document.getElementById('calculate-btn').addEventListener('click',function func1(){
+        const income=inputValue("income");
+        const food=inputValue("food");
+        const rent=inputValue("rent");
+        const cloth=inputValue("cloth");
+        if (isNaN(income)) {
+            console.log('ad') 
+        }
+        else if (isNaN(food)) {
+            console.log('ad') 
+        }
+        else if (isNaN(rent)) {
+            console.log('ad') 
+        }
+        else if (isNaN(cloth)){
+            console.log('ad') 
+        }  
+        else {
         const totalExpense=food+rent+cloth;
-        const balance=income-totalExpense;
+        var balance=income-totalExpense;
+        
         document.getElementById('total-expense').innerText=totalExpense;
         document.getElementById('balance').innerText=balance;
-        return balance;
+        }
         })
 
 
 
  document.getElementById('saving-btn').addEventListener('click',function(){
-        const balance=parseFloat(document.getElementById('balance').innerHTML);
+     
+        const balance=document.getElementById('balance').innerText;
         const save=parseFloat(document.getElementById('saving-input').value);
         const saved=balance*(save/100);
         document.getElementById('saving-amount').innerText=saved;
