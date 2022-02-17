@@ -1,10 +1,4 @@
-:root{
-    --color1:#82ccdd; 
-    --color2:#bcd4da;
-    --color3:#dfe4ea;
-    --span:#b71540;
 
-}
 html{
     margin: 0;
     padding: 0;
@@ -14,30 +8,77 @@ body{
     padding: 0;    
 }
 h5{
-    text-align: center;
-     
+    margin-top: 15px!important;
+}
+.container{
+    display: flex;
+    max-width: 90%;
+    justify-content: center;
+}
+.image{
+    flex-basis: 50%;
+   
+}
+img{
+        max-width: 100%;
+        max-height: 100%;
+}
+.calculation{
+    flex-basis: 50%;
+    margin-left: 50px;
+    background-color:#F8F8F8;
 }
 
-.input-section{
-    position: relative;
-    margin: 15px;
-}
-.label{
-    position: absolute;
-    right: 275px;
-}
+ .input-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 50px 0 15px;
+ }
+
 .input{
     background-color: #DCDCDC;
     border: 0;
     border-radius: 3px;
-    position: relative;
-    left: 100px;
     padding-left: 10px;
 }
-#saving-input{
-    background-color: #DCDCDC;
-    border: 0;
-    border-radius: 3px;
-    padding-left: 10px;
-}
+ .input:not(#saving-input){
+     flex-basis: 70%;
+ }
 
+ .label{
+     flex-basis: 30%;
+     display: flex;
+     justify-content: right;
+     margin:0 15px;
+ }
+ .saving-section{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin: 0 40px;
+ }
+@media only screen and (max-width:576px){
+    .container{
+        flex-direction: column;
+        max-width: 100%;
+    }
+    
+    .calculation{
+        margin-left: 0;
+    }
+    .input-section{    
+        margin: 10px;
+     }
+    
+     .label{
+         margin:0 10px;
+     }
+     .saving-section{
+         margin: 0  10px;
+         
+     }
+     #saving-input{
+         max-width: 100px;
+     }
+}

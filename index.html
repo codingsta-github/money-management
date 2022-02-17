@@ -18,51 +18,51 @@
     <!-- main -->
     <main>
         <div class="container">
-            <div class="row flex-nowrap">
-                <div class="col-lg-6">
-                    <img class="img-fluid" src="src/image.jpg" alt="">
+            <div class="image">
+                <img src="src/image.jpg" alt="">
+            </div>
+           
+            
+            <div class="calculation">
+                <!-- income -->
+                 <h5 class='text-center'>Income</h5>
+                 <div class='input-section'>
+                 <label class="label" for="">Income:</label>
+                 <input id="income-input" class='input'  type="text">
                 </div>
-                <div class="col-lg-6 ms-5 bg-light pt-4 px-5 ">
-                    <!-- income -->
-                     <h5>Income</h5>
-                     <div class='input-section'>
-                     <label class="label" for="">Income:</label>
-                     <input id="income-input" class='input'  type="text">
-                    </div>
-                     <!-- Expense -->
-                     <h5>Expense</h5>
-                     <div class='input-section'>
-                     <label class="label" for="">Food:</label>
-                     <input id="food-input" class='input'  type="text">
-                     </div>
-                     <div class='input-section'>
-                     <label class="label" for="">Rent:</label>
-                     <input id="rent-input" class='input' type="text">
-                    </div>
-                    <div class='input-section'>
-                     <label class="label" for="">Cloth:</label>
-                     <input id="cloth-input" class='input'  type="text">
-                     
-                    </div>
-                    <div class="d-flex justify-content-center" >
-                        <button id="calculate-btn" class="btn btn-primary mb-3 px-4">Calculate</button>
-                    </div>
-                     <!-- total  -->
-                     <h5>Total Expenses : <span id="total-expense"></span> </h5>
-                     <h5>Balance : <span id="balance"></span> </h5>
-                    
+                 <!-- Expense -->
+                 <h5 class='text-center'>Expense</h5>
+                 <div class='input-section'>
+                 <label class="label" for="">Food:</label>
+                 <input id="food-input" class='input'  type="text">
+                 </div>
+                 <div class='input-section'>
+                 <label class="label" for="">Rent:</label>
+                 <input id="rent-input" class='input' type="text">
+                </div>
+                <div class='input-section'>
+                 <label class="label" for="">Cloth:</label>
+                 <input id="cloth-input" class='input'  type="text">
+                 
+                </div>
+                <div class="input-section" >
+                    <button id="calculate-btn" class="btn btn-primary mb-3 px-4">Calculate</button>
+                </div>
+                 <!-- total  -->
+                 <h5 class='text-center'>Total Expenses : <span id="total-expense"></span> </h5>
+                 <h5 class='text-center'>Balance : <span id="balance"></span> </h5>
+                
 
-                     <!-- savings -->
-                     <div class="d-flex justify-content-evenly align-items-center">
-                        <label for="">Save</label>
-                        <input id="saving-input" type="text">
-                        <h5>%</h5>
-                        <button id="saving-btn" class="btn btn-primary px-4">Save</button>
-                     </div>
-                     <h5>Saving Amount : <span id="saving-amount"></span> </h5>
-                     <h5>Remaining Balance : <span id="remaining-balance"></span> </h5>
-                    
-                </div>
+                 <!-- savings -->
+                 <div class="saving-section">
+                    <label for="">Save</label>
+                    <input id="saving-input" class='input' type="text">
+                    <h5 class='text-center m-0'>%</h5>
+                    <button id="saving-btn" class="btn btn-primary">Save</button>
+                 </div>
+                 <h5 class='text-center '>Saving Amount : <span id="saving-amount"></span> </h5>
+                 <h5 class='text-center'>Remaining Balance : <span id="remaining-balance"></span> </h5>
+                
             </div>
         </div>
 
