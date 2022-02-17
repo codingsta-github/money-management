@@ -28,7 +28,7 @@
                  <h5 class='text-center'>Income</h5>
                  <div class='input-section'>
                  <label class="label" for="">Income:</label>
-                 <input id="income-input" class='input'  type="text">
+                 <input id="income-input" class='input'  type="numbertext">
                  </div>
                  <h6 id="income-err">! Income value is invalid.Type a valid amount</h6>
                 
@@ -36,19 +36,19 @@
                  <h5 class='text-center'>Expense</h5>
                  <div class='input-section'>
                  <label class="label" for="">Food:</label>
-                 <input id="food-input" class='input'  type="text">
+                 <input id="food-input" class='input'  type="numbertext" >
                  </div>
                  <h6 id="food-err">! Food value is invalid.Type a valid amount</h6>
                  
                  <div class='input-section'>
                  <label class="label" for="">Rent:</label>
-                 <input id="rent-input" class='input' type="text">
+                 <input id="rent-input" class='input' type="numbertext">
                  </div>
                  <h6 id="rent-err">! Rent value is invalid.Type a valid amount</h6>
                 
                  <div class='input-section'>
                  <label class="label" for="">Cloth:</label>
-                 <input id="cloth-input" class='input'  type="text">
+                 <input id="cloth-input" class='input'  type="numbertext">
                  </div>
                  <h6 id="cloth-err">! Cloth value is invalid.Type a valid amount</h6>
                
@@ -63,10 +63,11 @@
                  <!-- savings -->
                  <div class="saving-section">
                     <label for="">Save</label>
-                    <input id="saving-input" class='input' type="text">
+                    <input id="saving-input" class='input' type="numbertext">
                     <h5 class='text-center m-0'>%</h5>
                     <button id="saving-btn" class="btn btn-primary">Save</button>
                  </div>
+                 <h6 id="saving-err">! You don't have enough money to save</h6>
                  <h5 class='text-center '>Saving Amount : <span id="saving-amount"></span> </h5>
                  <h5 class='text-center'>Remaining Balance : <span id="remaining-balance"></span> </h5>
                 
