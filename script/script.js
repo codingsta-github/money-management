@@ -12,16 +12,16 @@ function inputValue(src) {
         const rent=inputValue("rent");
         const cloth=inputValue("cloth");
         if (isNaN(income)) {
-            console.log('ad') 
+            document.getElementById('income-err').style.display='block' ;
         }
         else if (isNaN(food)) {
-            console.log('ad') 
+            document.getElementById('food-err').style.display='block' ;
         }
         else if (isNaN(rent)) {
-            console.log('ad') 
+            document.getElementById('rent-err').style.display='block' ;
         }
         else if (isNaN(cloth)){
-            console.log('ad') 
+            document.getElementById('cloth-err').style.display='block' ;
         }  
         else {
         const totalExpense=food+rent+cloth;

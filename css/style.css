@@ -10,6 +10,12 @@ body{
 h5{
     margin-top: 15px!important;
 }
+h6{
+    margin-right: 80px;
+    text-align: right;
+    font-size: 8px!important;
+    display: none;
+}
 .container{
     display: flex;
     max-width: 90%;
@@ -80,5 +86,8 @@ img{
      }
      #saving-input{
          max-width: 100px;
+     }
+     h6{
+         margin-right: 10px;
      }
 }
