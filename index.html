@@ -66,7 +66,12 @@
                     <button id="calculate-btn" class="btn btn-primary mb-3 px-4">Calculate</button>
                 </div>
 
-                 <!-- balnce calculation  -->
+                <!-- expense error, when expense greater than income; -->
+
+                <h6 id="expense-err">! You've Expenses more than of your earning. try to manage your money</h6>
+                 
+                
+                <!-- balnce calculation  -->
                  <h5 class='text-center'>Total Expenses : <span id="total-expense"></span> </h5>
                  <h5 class='text-center'>Balance : <span id="balance"></span> </h5>
                 
@@ -78,7 +83,9 @@
                     <h5 class='text-center m-0'>%</h5>
                     <button id="saving-btn" class="btn btn-primary">Save</button>
                  </div>
-                 
+
+                 <!-- save string or negetive number error -->
+                 <h6 id="save-err">! save percentage is invalid. If you dont want to save then type 0</h6>
                  <!-- savings and balance -->
 
                 
@@ -89,7 +96,7 @@
                  
                  <!-- if savings greater than balance then remaining balance 
                     wont be calculated.  -->
-                    
+
                  <h5 class='text-center'>Remaining Balance : <span id="remaining-balance"></span> </h5>
                 
             </div>

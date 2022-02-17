@@ -24,11 +24,16 @@ document.getElementById('calculate-btn').addEventListener('click',function(){
         
         document.getElementById('total-expense').innerText=totalExpense;
         document.getElementById('balance').innerText=balance;
+
+        // expense error, when expense greater than income
+        if (balance<0) {
+            document.getElementById('expense-err').style.display='block' ;
+        }
         }
 
         /* string , negetive error handling. only the numbers greater or 
         equal 0 will calculate.*/
-        
+
     if (isNaN(income)||income<0) {
         document.getElementById('income-err').style.display='block' ;
     }
@@ -50,6 +55,11 @@ document.getElementById('calculate-btn').addEventListener('click',function(){
         const income=parseFloat(document.getElementById('income-input').value);
         const balance=parseFloat(document.getElementById('balance').innerText);
         const save=parseFloat(document.getElementById('saving-input').value);
+        
+        if (isNaN(save)||save<0) {
+            document.getElementById('save-err').style.display='block' ;
+        }
+        else{
         const saved=income*(save/100);
         document.getElementById('saving-amount').innerText=saved.toFixed(2);
         
@@ -62,7 +72,7 @@ document.getElementById('calculate-btn').addEventListener('click',function(){
             document.getElementById('remaining-balance').innerText=(balance-saved).toFixed(2);
             
         }    
-       
+    }
         
             
  })

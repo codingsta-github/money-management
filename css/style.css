@@ -14,13 +14,13 @@ body{
 h5{
     margin-top: 15px!important;
 }
-h6:not(#saving-err){
+h6:not(#saving-err,#save-err,#expense-err){
     margin-right: 80px;
     text-align: right;
     font-size: 10px!important;
     display: none;
 }
-#saving-err{
+#save-err,#saving-err,#expense-err{
     text-align: center;
     font-size: 10px!important;
     display: none;
