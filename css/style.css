@@ -1,4 +1,7 @@
 
+/* I've used Bootstrap only for heading and 
+button.Because it looks good .  */
+
 html{
     margin: 0;
     padding: 0;
@@ -7,6 +10,7 @@ body{
     margin: 0;
     padding: 0;    
 }
+
 h5{
     margin-top: 15px!important;
 }
@@ -69,6 +73,10 @@ img{
      align-items: center;
      margin: 0 40px;
  }
+
+ /* media query for mobile responsiveness. 
+ no bootstrap element for responsiveness */
+
 @media only screen and (max-width:576px){
     .container{
         flex-direction: column;
