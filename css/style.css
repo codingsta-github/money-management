@@ -17,12 +17,12 @@ h5{
 h6:not(#saving-err,#save-err,#expense-err){
     margin-right: 80px;
     text-align: right;
-    font-size: 10px!important;
+    font-size: 12px!important;
     display: none;
 }
 #save-err,#saving-err,#expense-err{
     text-align: center;
-    font-size: 10px!important;
+    font-size: 12px!important;
     display: none;
 }
 .container{
@@ -82,7 +82,9 @@ img{
         flex-direction: column;
         max-width: 100%;
     }
-    
+    .image{
+         padding: 0 10px;
+     }
     .calculation{
         margin-left: 0;
     }
@@ -101,6 +103,8 @@ img{
          max-width: 100px;
      }
      h6{
-         margin-right: 10px;
+         margin-right: 10px!important;
      }
+     
+
 }
